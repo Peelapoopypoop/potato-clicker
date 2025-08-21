@@ -24,6 +24,7 @@ potato.addEventListener('click', () => {
   // Increment counter
   count++;
   countDisplay.textContent = count;
+  localStorage.setItem('count', count);
 
   // Save to localStorage
   localStorage.setItem('count', count);
@@ -32,7 +33,7 @@ potato.addEventListener('click', () => {
   setTimeout(() => {
     potato.classList.remove('clicked');
     potato.src = 'assets/potato1.png';
-  }, 200);
+  }, 150);
 });
 
 // Clear button

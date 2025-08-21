@@ -69,20 +69,29 @@ display: block;
 }
 /* Animation for potato click */
 #potato.clicked {
-  transform: scale(1.1);   /* grow 10% */
-  transition: transform 0.1s ease-in-out;
+  transform: scale(1.15);   /* grow 15% */
+  transition: transform 0.15s cubic-bezier(.68,-0.55,.27,1.55); /* bouncy effect */
 }
 @media (max-width: 600px) {
   body {
-    width: 100%;           /* fill the screen */
-    height: 100vh;         /* full viewport height */
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    background-color: #f5e4c3;
   }
 
   #potato {
     max-width: 150px;      /* smaller on mobile */
-    margin: 20px auto;
+    margin: 20px 0;
+     user-select: none;         /* prevents selection on tap */
+    -webkit-user-drag: none;
+    cursor: pointer;
+  transition: transform 0.1s ease-in-out;
   }
 
   #count {
