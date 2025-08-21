@@ -1,0 +1,96 @@
+/* General body styles */
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 500px;               /* or whatever height you chose */
+  background-color: #F5DEB3;
+  
+  display: flex;
+  flex-direction: column;      /* vertical layout */
+  align-items: center;         /* horizontal centering */
+  justify-content: space-between; /* vertical spacing */
+  font-family: Arial, sans-serif;
+  text-align: center;          /* ensure text inside divs is centered */
+}
+
+/* Counter at the top */
+#count-container {
+ margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* space between word and number */
+}
+
+/* Potato image */
+#potato {
+display: block;
+  margin: 20px auto;
+  max-width: 200px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  touch-action: manipulation; /* improves responsiveness on mobile */
+}
+
+/* Clear button */
+#clear-btn {
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  background-color: #E6C79C;   /* slightly darker beige/orange to match background */
+  border: none;
+  border-radius: 12px;          /* round edges for a friendly look */
+  font-family: 'Comic Sans MS', cursive, sans-serif;  /* playful font to match counter */
+  font-size: 1em;
+  color: #8B4513;               /* warm brown text */
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);  /* subtle depth */
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#clear-btn:hover {
+   background-color: #DAB68A;     /* slightly darker on hover */
+  transform: scale(1.05);        /* small pop effect */
+}
+#count-label {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* playful font */
+  color: #A0522D;  /* warm brown */
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #FFDAB9; /* subtle highlight for fun effect */
+}
+#count {
+  font-family: 'Arial Black', Gadget, sans-serif; /* bold and readable */
+  color: #8B4513;  /* slightly darker brown */
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #FFE4B5; /* subtle highlight for depth */
+}
+/* Animation for potato click */
+#potato.clicked {
+  transform: scale(1.1);   /* grow 10% */
+  transition: transform 0.1s ease-in-out;
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;           /* fill the screen */
+    height: 100vh;         /* full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #potato {
+    max-width: 150px;      /* smaller on mobile */
+    margin: 20px auto;
+  }
+
+  #count {
+    font-size: 1.5em;      /* bigger text for readability */
+  }
+
+  #clear-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}

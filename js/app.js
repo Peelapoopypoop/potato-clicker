@@ -1,0 +1,43 @@
+const potato = document.getElementById('potato');
+const countDisplay = document.getElementById('count');
+const clearBtn = document.getElementById('clear-btn');
+
+// Load saved counter from localStorage
+let count = parseInt(localStorage.getItem('count')) || 0;
+countDisplay.textContent = count;
+
+// Load click sound
+const clickSound = new Audio('assets/click.mp3.mp3');
+
+// Potato click event
+potato.addEventListener('click', () => {
+  // Add clicked animation
+  potato.classList.add('clicked');
+
+  // Swap image
+  potato.src = 'assets/potato2.png';
+
+  // Play sound
+  clickSound.currentTime = 0;
+  clickSound.play();
+
+  // Increment counter
+  count++;
+  countDisplay.textContent = count;
+
+  // Save to localStorage
+  localStorage.setItem('count', count);
+
+  // Revert image and animation after 200ms
+  setTimeout(() => {
+    potato.classList.remove('clicked');
+    potato.src = 'assets/potato1.png';
+  }, 200);
+});
+
+// Clear button
+clearBtn.addEventListener('click', () => {
+  count = 0;
+  countDisplay.textContent = count;
+  localStorage.setItem('count', count);
+});
