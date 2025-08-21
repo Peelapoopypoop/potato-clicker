@@ -82,13 +82,12 @@ display: block;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f5e4c3;
   }
 
   #potato {
     max-width: 150px;      /* smaller on mobile */
     margin: 20px 0;
-     user-select: none;         /* prevents selection on tap */
+    user-select: none;         /* prevents selection on tap */
     -webkit-user-drag: none;
     cursor: pointer;
     transition: transform 0.1s ease-in-out;
