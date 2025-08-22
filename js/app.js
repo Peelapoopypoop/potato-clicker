@@ -24,12 +24,11 @@ potato.addEventListener('click', () => {
   // Increment counter
   count++;
   countDisplay.textContent = count;
-  localStorage.setItem('count', count);
 
   // Save to localStorage
   localStorage.setItem('count', count);
 
-  // Revert image and animation after 200ms
+  // Revert image and animation after 150ms
   setTimeout(() => {
     potato.classList.remove('clicked');
     potato.src = 'assets/potato1.png';

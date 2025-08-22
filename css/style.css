@@ -27,15 +27,18 @@ body {
 #potato {
 display: block;
   margin: 20px auto;
-  max-width: 200px;
+  max-width: 250px;
+  width: 50%;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
   transition: transform 0.1s ease-in-out;
   touch-action: manipulation; /* improves responsiveness on mobile */
 }
 
 /* Clear button */
 #clear-btn {
-  margin-bottom: 20px;
+  margin-top: 20px;
   padding: 10px 25px;
   background-color: #E6C79C;   /* slightly darker beige/orange to match background */
   border: none;
@@ -63,9 +66,11 @@ display: block;
 #count {
   font-family: 'Arial Black', Gadget, sans-serif; /* bold and readable */
   color: #8B4513;  /* slightly darker brown */
-  font-size: 28px;
+  font-size: 2em;
   font-weight: bold;
   text-shadow: 1px 1px 2px #FFE4B5; /* subtle highlight for depth */
+  margin-bottom: 20px;
+  user-select: none;
 }
 /* Animation for potato click */
 #potato.clicked {
