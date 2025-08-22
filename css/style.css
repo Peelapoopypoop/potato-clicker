@@ -1,29 +1,28 @@
-/* General body styles */
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;               /* or whatever height you chose */
+  height: 100vh;              
   background-color: #F5DEB3;
   
   display: flex;
-  flex-direction: column;      /* vertical layout */
-  align-items: center;         /* horizontal centering */
-  justify-content: center; /* vertical spacing */
+  flex-direction: column;      
+  align-items: center;         
+  justify-content: center; 
   font-family: Arial, sans-serif;
-  text-align: center;          /* ensure text inside divs is centered */
+  text-align: center;         
 }
 
-/* Counter at the top */
+
 #count-container {
  margin-top: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
-  gap: 10px; /* space between word and number */
+  gap: 10px; 
 }
 
-/* Potato image */
+
 #potato {
 display: block;
   margin: 20px auto;
@@ -37,49 +36,49 @@ display: block;
   -ms-user-select: none;
   -moz-user-select: none;
   transition: transform 0.1s ease-in-out;
-  touch-action: manipulation; /* improves responsiveness on mobile */
+  touch-action: manipulation; 
 }
 
-/* Clear button */
+
 #clear-btn {
   margin-top: 20px;
   padding: 10px 25px;
-  background-color: #E6C79C;   /* slightly darker beige/orange to match background */
+  background-color: #E6C79C;  
   border: none;
-  border-radius: 12px;          /* round edges for a friendly look */
-  font-family: 'Comic Sans MS', cursive, sans-serif;  /* playful font to match counter */
+  border-radius: 12px;         
+  font-family: 'Comic Sans MS', cursive, sans-serif;  
   font-size: 1em;
-  color: #8B4513;               /* warm brown text */
+  color: #8B4513;              
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);  /* subtle depth */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);  
   transition: background-color 0.2s, transform 0.1s;
 }
 
 #clear-btn:hover {
-   background-color: #DAB68A;     /* slightly darker on hover */
-  transform: scale(1.05);        /* small pop effect */
+   background-color: #DAB68A;    
+  transform: scale(1.05);       
 }
 #count-label {
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* playful font */
-  color: #A0522D;  /* warm brown */
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  color: #A0522D;  
   font-size: 28px;
   font-weight: bold;
-  text-shadow: 1px 1px 2px #FFDAB9; /* subtle highlight for fun effect */
+  text-shadow: 1px 1px 2px #FFDAB9; 
 }
 #count {
-  font-family: 'Arial Black', Gadget, sans-serif; /* bold and readable */
-  color: #8B4513;  /* slightly darker brown */
+  font-family: 'Arial Black', Gadget, sans-serif; 
+  color: #8B4513;  
   font-size: 2em;
   font-weight: bold;
-  text-shadow: 1px 1px 2px #FFE4B5; /* subtle highlight for depth */
+  text-shadow: 1px 1px 2px #FFE4B5; 
   margin-bottom: 20px;
   user-select: none;
 }
-/* Animation for potato click */
+
 #potato.clicked {
-  transform: scale(1.15);   /* grow 15% */
-  transition: transform 0.15s cubic-bezier(.68,-0.55,.27,1.55); /* bouncy effect */
+  transform: scale(1.15);  
+  transition: transform 0.15s cubic-bezier(.68,-0.55,.27,1.55); 
 }
 @media (max-width: 600px) {
   body {
@@ -94,10 +93,10 @@ display: block;
   }
 
   #potato {
-    max-width: 550px;      /* smaller on mobile */
+    max-width: 550px;     
     min-width: 450px;
     margin: 20px 0;
-    user-select: none;         /* prevents selection on tap */
+    user-select: none;         
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -107,7 +106,7 @@ display: block;
   }
 
   #count {
-    font-size: 1.5em;      /* bigger text for readability */
+    font-size: 1.5em;     
   }
 
   #clear-btn {
