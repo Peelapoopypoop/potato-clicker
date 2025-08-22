@@ -15,7 +15,7 @@ potato.addEventListener('click', () => {
   potato.classList.add('clicked');
 
   // Swap image
-  potato.src = 'assets/potato2.png';
+  potato.src = 'potato-clicker/assets/potato2.png';
 
   // Play sound
   clickSound.currentTime = 0;
