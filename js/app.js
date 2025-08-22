@@ -16,7 +16,7 @@ potato.addEventListener('click', () => {
   potato.classList.add('clicked');
 
   // Swap image
-  potato.src = 'assets/potato2.png';
+  potato.src = './assets/potato2.png';
 
   // Play sound
   clickSound.currentTime = 0;
@@ -32,7 +32,7 @@ potato.addEventListener('click', () => {
   // Revert image and animation after 150ms
   setTimeout(() => {
     potato.classList.remove('clicked');
-    potato.src = 'assets/potato1.png';
+    potato.src = './assets/potato1.png';
   }, 150);
 });
 
