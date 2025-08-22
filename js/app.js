@@ -2,6 +2,7 @@ const potato = document.getElementById('potato');
 const countDisplay = document.getElementById('count');
 const clearBtn = document.getElementById('clear-btn');
 
+potato.addEventListener('mousedown', (e) => e.preventDefault());
 // Load saved counter from localStorage
 let count = parseInt(localStorage.getItem('count')) || 0;
 countDisplay.textContent = count;
