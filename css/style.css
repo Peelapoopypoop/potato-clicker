@@ -61,17 +61,23 @@ display: block;
   transform: scale(1.05);       
 }
 #count-label {
-  font-family: 'Comic Sans MS', cursive, sans-serif; 
-  color: #A0522D;  
-  font-size: 28px;
+   font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
   font-weight: bold;
+  font-style: normal;
+  color: #A0522D;  
+  /* font-size: 28px; */
+  /* font-weight: bold; */
   text-shadow: 1px 1px 2px #FFDAB9; 
 }
 #count {
-  font-family: 'Arial Black', Gadget, sans-serif; 
-  color: #8B4513;  
-  font-size: 2em;
+   font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
   font-weight: bold;
+  font-style: normal;
+  color: #8B4513;  
+  /* font-size: 2em; */
+  /* font-weight: bold; */
   text-shadow: 1px 1px 2px #FFE4B5; 
   margin-bottom: 20px;
   user-select: none;
@@ -104,7 +110,7 @@ display: block;
     -moz-user-select: none;
     cursor: pointer;
     transition: transform 0.01s ease-in-out;
-    /* -webkit-tap-highlight-color: transparent;; */
+    /* -webkit-tap-highlight-color: transparent; */
   }
 
   #count {
