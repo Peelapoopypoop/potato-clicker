@@ -37,8 +37,8 @@ display: block;
   -moz-user-select: none;
   transition: transform 0.01s ease-in-out;
   touch-action: manipulation; 
-  -webkit-tap-highlight-color: transparent;
-}
+  /* -webkit-tap-highlight-color: transparent; */
+
 
 
 #clear-btn {
@@ -104,7 +104,7 @@ display: block;
     -moz-user-select: none;
     cursor: pointer;
     transition: transform 0.01s ease-in-out;
-    -webkit-tap-highlight-color: transparent;;
+    /* -webkit-tap-highlight-color: transparent;; */
   }
 
   #count {
