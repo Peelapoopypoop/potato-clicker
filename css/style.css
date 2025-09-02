@@ -38,6 +38,7 @@ display: block;
   transition: transform 0.01s ease-in-out;
   touch-action: manipulation; 
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 
@@ -105,6 +106,7 @@ display: block;
     cursor: pointer;
     transition: transform 0.01s ease-in-out;
     -webkit-tap-highlight-color: transparent;
+    outline: none;
   }
 
   #count {
