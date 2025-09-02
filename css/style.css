@@ -35,7 +35,7 @@ display: block;
   -webkit-user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.01s ease-in-out;
   touch-action: manipulation; 
 }
 
@@ -102,7 +102,7 @@ display: block;
     -ms-user-select: none;
     -moz-user-select: none;
     cursor: pointer;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.01s ease-in-out;
   }
 
   #count {
