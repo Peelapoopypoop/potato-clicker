@@ -38,7 +38,7 @@ display: block;
   transition: transform 0.01s ease-in-out;
   touch-action: manipulation; 
   /* -webkit-tap-highlight-color: transparent; */
-
+}
 
 
 #clear-btn {
